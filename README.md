@@ -1,12 +1,12 @@
 # * WORK IN PROGRESS *
 
-# Terraform_ISE_Policy_Set_MM_LIM
-Terraform code for creating Wired Monitor Mode &amp; Low Impact Mode Policy Sets in Cisco Identity Services Engine (ISE) 3.1
+# Terraform_ISE_Policy_Set_MM_LIM_Wireless
+Terraform code for creating Wired Monitor Mode, Wired Low Impact Mode, and Wireless Secure Policy Sets in Cisco Identity Services Engine (ISE) 3.1
 
 This code was validated using the following:
  - Cisco ISE 3.1 patch 5
- - Terraform version: 1.3.5
- - ISE Terraform provider version: 0.6.11-beta
+ - Terraform version: 1.3.9
+ - ISE Terraform provider version: 0.6.18-beta
  
 The Cisco ISE Terraform Provider documentation can be found here:
 
@@ -47,7 +47,7 @@ Wired_MM
  - AuthZ Policies
    - AD User
    - AD Computer
-   - Default (updated AuthZ Profile)  <-- BUG OPEN
+   - Default (updated AuthZ Profile)
 
 Wired_LIM
  - AuthC Policies
@@ -56,4 +56,11 @@ Wired_LIM
  - AuthZ Policies
    - AD User
    - AD Computer
-   - Default (updated AuthZ Profile) <-- BUG OPEN
+   - Default (updated AuthZ Profile)
+   
+Wireless_Secure
+ - AuthC Policy
+   - Dot1x EAP-TLS
+ - AuthZ Policies
+   - AD User
+   - AD Computer
