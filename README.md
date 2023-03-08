@@ -16,6 +16,8 @@ https://registry.terraform.io/providers/CiscoISE/ciscoise/latest/docs
 The following ISE configurations are required prior to running this code:
 
 1. An administrator account with the 'ERS Admin' role
+2. An Active Directory admin username/password with the permissions necessary to join the ISE nodes to the AD domain
+3. The name of the Airespace Access List configured on the WLC to permit access for authorized Wireless sessions
 
 ## Policies and Policy Elements created
 The following Policy Elements and Policy Sets are created by this code:
@@ -64,3 +66,7 @@ Wireless_Secure
  - AuthZ Policies
    - AD User
    - AD Computer
+
+## Policy Set Configuration Example
+<img width="1160" alt="Terraform_ISE_Policy_Sets" src="https://user-images.githubusercontent.com/103554967/223611268-56f7beaa-ccd9-4d78-b977-fab9e833d311.png">
+
